@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/EmirVatric/Restaurant_page#readme",
   "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
   }
