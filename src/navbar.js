@@ -1,6 +1,7 @@
-import menu from './menu'
-import home from './home'
-import contact from './contact'
+import menu from './menu';
+import home from './home';
+import contact from './contact';
+
 const navbar = () => {
   // navbar
   const content = document.getElementById('content');
@@ -14,35 +15,32 @@ const navbar = () => {
   navItems.className = 'nav-items';
   nav.appendChild(navItems);
 
-  let element = document.createElement('SPAN');
-  element.innerHTML = 'HOME'
+  const element = document.createElement('SPAN');
+  element.innerHTML = 'HOME';
   element.addEventListener('click', () => {
-    content.innerHTML = ''
-    navbar()
-    home()
-  })
-  navItems.appendChild(element)
+    content.innerHTML = '';
+    navbar();
+    home();
+  });
+  navItems.appendChild(element);
 
-  let element2 = document.createElement('SPAN');
-  element2.innerHTML = 'CONTACT US'
+  const element2 = document.createElement('SPAN');
+  element2.innerHTML = 'CONTACT US';
   element2.addEventListener('click', () => {
-    content.innerHTML = ''
-    navbar()
-    contact()
-  })
-  navItems.appendChild(element2)
+    content.innerHTML = '';
+    navbar();
+    contact();
+  });
+  navItems.appendChild(element2);
 
-  let element3 = document.createElement('SPAN');
-  element3.innerHTML = 'MENU'
+  const element3 = document.createElement('SPAN');
+  element3.innerHTML = 'MENU';
   element3.addEventListener('click', () => {
-    content.innerHTML = ''
-    navbar()
-    menu()
-  })
-  navItems.appendChild(element3)
+    content.innerHTML = '';
+    navbar();
+    menu();
+  });
+  navItems.appendChild(element3);
+};
 
-
-
-}
-
-export default navbar
+export default navbar;

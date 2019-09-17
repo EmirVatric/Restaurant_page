@@ -3,15 +3,15 @@ const menu = () => {
 
   const menuHeading = document.createElement('H1');
   menuHeading.className = 'menuHeading';
-  menuHeading.innerText = 'MENU'
+  menuHeading.innerText = 'MENU';
   content.appendChild(menuHeading);
 
   const menuWrapper = document.createElement('DIV');
   menuWrapper.className = 'menuWrapper';
   content.appendChild(menuWrapper);
 
-  for (let i = 0; i < 10; i++) {
-    let description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi excepturi quod harum ipsa deserunt quam?"
+  for (let i = 0; i < 10; i += 1) {
+    const description = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi excepturi quod harum ipsa deserunt quam?';
 
     const product = document.createElement('DIV');
     product.className = 'product';
@@ -26,9 +26,6 @@ const menu = () => {
     descr.innerText = description;
     product.appendChild(descr);
   }
+};
 
-
-
-}
-
-export default menu
+export default menu;
